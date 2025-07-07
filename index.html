@@ -61,70 +61,67 @@
       cursor: pointer;
       color: #fff;
     }
-    nav {
-  display: flex;
-  align-items: center;
-}
 
     @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
 
-  .mobile-menu-toggle {
-    display: block;
-  }
+      .mobile-menu-toggle {
+        display: block;
+      }
 
-  nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
 
-  nav.active {
-    display: flex;
-  }
+      nav.active {
+        display: flex;
+      }
 
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
 
-  .hero {
-    height: auto;
-    padding: 60px 20px;
-    flex-direction: column;
-    text-align: center;
-  }
+      .hero {
+        height: auto;
+        padding: 60px 20px;
+        flex-direction: column;
+        text-align: center;
+      }
 
-  .hero h2 {
-    font-size: 28px;
-  }
+      .hero h2 {
+        font-size: 28px;
+      }
 
-  .hero p {
-    font-size: 16px;
-  }
+      .hero p {
+        font-size: 16px;
+      }
 
-  .features, .package-list {
-    grid-template-columns: 1fr;
-  }
+      .features, .package-list {
+        grid-template-columns: 1fr;
+      }
 
-  .cta h3 {
-    font-size: 24px;
-  }
+      .cta h3 {
+        font-size: 24px;
+      }
 
-  .cta p {
-    font-size: 16px;
-  }
+      .cta p {
+        font-size: 16px;
+      }
 
-  .cta-button {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 10px;
-  }
+      .cta-button {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+      }
+    }
 
     .hero {
       position: relative;
@@ -263,13 +260,13 @@
     }
 
     footer {
-  background-color: #0a1930;
-  color: #bbb;
-  text-align: left;
-  padding: 20px;
-  padding-bottom: 60px;
-  font-size: 14px;
-}
+      background-color: #0a1930;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -305,17 +302,17 @@
     <h1>TEXNET HOME FIBER</h1>
     <div class="mobile-menu-toggle" onclick="toggleMenu()">☰</div>
     <nav id="main-nav">
-  <a href="#hero" onclick="closeMenu()">Home</a>
-  <a href="#about" onclick="closeMenu()">About</a>
-  <a href="#packages" onclick="closeMenu()">Packages</a>
-  <a href="#contact" onclick="closeMenu()">Contact</a>
-</nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section class="hero" id="hero">
     <div>
       <h2>Unlimited. Affordable. Reliable.</h2>
-      <p>Your #1 Home Internet Provider in Kenya</p>
+      <p>Your Home Internet Provider</p>
     </div>
   </section>
 
@@ -366,27 +363,19 @@
     <a href="https://wa.me/254717893086" class="cta-button">Sign Up Now</a>
   </section>
 
- <footer id="contact">
-  <p>© 2025 TEXNET HOME FIBER</p>
-  <p>Unlimited. Affordable. Reliable.</p>
-  <p>Email: support@texnethomefiber.co.ke</p>
-  <p>Phone: +254 717 893 086</p>
-</footer>
+  <footer id="contact">
+    <p>© 2025 TEXNET HOME FIBER<p>
+    <p>Unlimited. Affordable. Reliable.</p>
+    <p>Email: support@texnethomefiber.co.ke<p>
+    <p>Phone: +254 717 893 086</p>
+  </footer>
 
-  <a href="https://wa.me/254717893086" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">💬 Chat with us</a>
+  <a href="https://wa.me/254717893086" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">💬 Let's Chat </a>
 
-    <script>
-  function toggleMenu() {
-    document.getElementById("main-nav").classList.toggle("active");
-  }
-
-  function closeMenu() {
-    const nav = document.getElementById("main-nav");
-    if (nav.classList.contains("active")) {
-      nav.classList.remove("active");
+  <script>
+    function toggleMenu() {
+      document.getElementById("main-nav").classList.toggle("active");
     }
-  }
-
   </script>
 </body>
 </html>
