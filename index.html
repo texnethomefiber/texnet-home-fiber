@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,28 +41,29 @@
     nav a:hover {
       color: #1dbf73;
     }
-    .hero .hero {
-  position: relative;
-  background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7') no-repeat center center/cover;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* dark overlay */
-  z-index: 0;
-}
-.hero div {
-  position: relative;
-  z-index: 1;
-}
+
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+    .hero div {
+      position: relative;
+      z-index: 1;
+    }
 
     .about {
       background-color: #ffffff;
@@ -80,6 +82,7 @@
       line-height: 1.6;
       color: #444;
     }
+
     .features {
       padding: 60px 20px;
       display: grid;
@@ -98,30 +101,7 @@
       color: #0a1930;
       margin-bottom: 10px;
     }
-    .cta {
-      background-color: #1dbf73;
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .cta h3 {
-      margin-bottom: 20px;
-      font-size: 28px;
-    }
-    .cta button {
-      background-color: #fff;
-      color: #1dbf73;
-      border: none;
-      padding: 12px 30px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .cta button:hover {
-      background-color: #c4f0da;
-    }
+
     .packages {
       background-color: #fff;
       padding: 60px 20px;
@@ -152,6 +132,32 @@
       font-size: 16px;
       color: #333;
     }
+
+    .cta {
+      background-color: #1dbf73;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cta h3 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .cta button {
+      background-color: #fff;
+      color: #1dbf73;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .cta button:hover {
+      background-color: #c4f0da;
+    }
+
     footer {
       background-color: #0a1930;
       color: #bbb;
@@ -159,7 +165,8 @@
       padding: 20px;
       font-size: 14px;
     }
-        .whatsapp-float {
+
+    .whatsapp-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -177,64 +184,51 @@
       background-color: #128c52;
       transform: scale(1.05);
     }
+
     @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-
-  nav {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .hero {
-    height: auto;
-    padding: 60px 20px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero h2 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .features, .package-list {
-    grid-template-columns: 1fr;
-  }
-
-  .cta h3 {
-    font-size: 24px;
-  }
-
-  .cta p {
-    font-size: 16px;
-  }
-
-  .cta button {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 10px;
-  }
-
-  form input, form textarea, form button {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      nav {
+        width: 100%;
+        margin-top: 10px;
+      }
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+      .hero {
+        height: auto;
+        padding: 60px 20px;
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero h2 {
+        font-size: 28px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+      .features, .package-list {
+        grid-template-columns: 1fr;
+      }
+      .cta h3 {
+        font-size: 24px;
+      }
+      .cta p {
+        font-size: 16px;
+      }
+      .cta button {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
-<body>
+<body onload="window.scrollTo(0, 0)">
   <header>
     <h1>TEXNET HOME FIBER</h1>
     <nav>
@@ -243,19 +237,25 @@
       <a href="#packages">Packages</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>  <section class="hero" id="hero">
+  </header>
+
+  <section class="hero" id="hero">
     <div>
       <h2>Unlimited. Affordable. Reliable.</h2>
       <p>Your #1 Home Internet Provider in Kenya</p>
     </div>
-  </section>  <section class="about" id="about">
+  </section>
+
+  <section class="about" id="about">
     <h2>About TEXNET HOME FIBER</h2>
     <p>
       TEXNET HOME FIBER is a proudly Kenyan-owned Internet Service Provider committed to delivering fast, unlimited, and affordable fiber internet to homes across the country. Founded with the vision of bridging the digital divide, we focus on offering high-speed connectivity that meets the daily demands of work, education, streaming, and smart living. 
       <br /><br />
       We believe that every home deserves reliable internet without the burden of hidden fees or unfair limits. That’s why our packages are transparently priced, installation is free, and our local support team is always ready to assist. Whether you're in a bustling city estate or a quiet suburb, TEXNET is dedicated to connecting your world.
     </p>
-  </section>  <section class="features">
+  </section>
+
+  <section class="features">
     <div class="feature">
       <h3>Unlimited Internet</h3>
       <p>No data caps. Browse, stream, and work as much as you want.</p>
@@ -272,49 +272,32 @@
       <h3>Local Support</h3>
       <p>We’re your neighbors — fast response from our local team.</p>
     </div>
-  </section>  <section class="packages" id="packages">
+  </section>
+
+  <section class="packages" id="packages">
     <h2>Internet Packages</h2>
     <div class="package-list">
-      <div class="package">
-        <h4>5 Mbps</h4>
-        <p>KES 1,500 / month</p>
-      </div>
-      <div class="package">
-        <h4>10 Mbps</h4>
-        <p>KES 2,000 / month</p>
-      </div>
-      <div class="package">
-        <h4>15 Mbps</h4>
-        <p>KES 2,500 / month</p>
-      </div>
-      <div class="package">
-        <h4>20 Mbps</h4>
-        <p>KES 3,000 / month</p>
-      </div>
-      <div class="package">
-        <h4>30 Mbps</h4>
-        <p>KES 4,000 / month</p>
-      </div>
-      <div class="package">
-        <h4>Router</h4>
-        <p>KES 2,000 (one-time)</p>
-      </div>
-      <div class="package">
-        <h4>Installation</h4>
-        <p>Free Installation</p>
-      </div>
+      <div class="package"><h4>5 Mbps</h4><p>KES 1,500 / month</p></div>
+      <div class="package"><h4>10 Mbps</h4><p>KES 2,000 / month</p></div>
+      <div class="package"><h4>15 Mbps</h4><p>KES 2,500 / month</p></div>
+      <div class="package"><h4>20 Mbps</h4><p>KES 3,000 / month</p></div>
+      <div class="package"><h4>30 Mbps</h4><p>KES 4,000 / month</p></div>
+      <div class="package"><h4>Router</h4><p>KES 2,000 (one-time)</p></div>
+      <div class="package"><h4>Installation</h4><p>Free Installation</p></div>
     </div>
-  </section>  <section class="cta">
+  </section>
+
+  <section class="cta">
     <h3>Get Connected Today</h3>
     <p>Choose from our home plans starting as low as KES 1,500/month</p>
     <button>Sign Up Now</button>
-  </section>  <footer id="contact">
+  </section>
+
+  <footer id="contact">
     <p>© 2025 TEXNET HOME FIBER | Unlimited. Affordable. Reliable.</p>
     <p>Email: support@texnetfiber.co.ke | Phone: +254 717 893 086</p>
   </footer>
-  <!-- WhatsApp Chat Button -->
-<a href="https://wa.me/254717893086" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
-  💬 Chat with us
-</a>
+
+  <a href="https://wa.me/254717893086" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">💬 Chat with us</a>
 </body>
-  </html>
+</html>
