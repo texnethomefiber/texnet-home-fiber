@@ -302,11 +302,11 @@
     <h1>TEXNET HOME FIBER</h1>
     <div class="mobile-menu-toggle" onclick="toggleMenu()">☰</div>
     <nav id="main-nav">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#packages">Packages</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <a href="#hero" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#packages" onclick="closeMenu()">Packages</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</nav>
   </header>
 
   <section class="hero" id="hero">
@@ -376,6 +376,12 @@
     function toggleMenu() {
       document.getElementById("main-nav").classList.toggle("active");
     }
+     function closeMenu() {
+    const nav = document.getElementById("main-nav");
+    if (nav.classList.contains("active")) {
+      nav.classList.remove("active");
+    }
+  }
   </script>
 </body>
 </html>
